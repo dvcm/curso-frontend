@@ -1,4 +1,5 @@
 # Ebac Escola britanica de artes criativas e tecnologia
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 curso python 5/3/2022
 Patrick
 
