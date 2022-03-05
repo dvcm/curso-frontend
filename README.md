@@ -1,4 +1,4 @@
-# ebac
+# Ebac Escola britanica de artes criativas e tecnologia
 curso python 5/3/2022
 Patrick
 
