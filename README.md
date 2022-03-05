@@ -33,16 +33,14 @@ São ramificações / versões paralelas
 Mescla branchs
 Voce pode precisar resolver conflitos manualmente
 
-## Pull Rwquests
+## Pull Requests
 Mescla de branchs no repositório
 Permite code review
 O repositório resolve os conflitos automaticamente
 
 
-
-
 ## Conveitos de Versionamento
-- Hitorico
+- Histórico
 - Controle de versão
 - Quem alterou
 - o que alterou
