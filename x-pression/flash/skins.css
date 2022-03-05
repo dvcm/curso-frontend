@@ -1,0 +1,22 @@
+
+DataGrid
+{
+	borderSkin: Embed(source="skins/DataGrid_borderSkin.png");
+	columnDropIndicatorSkin: Embed(source="skins/DataGrid_columnDropIndicatorSkin.png");
+	columnResizeSkin: Embed(source="skins/DataGrid_columnResizeSkin.png");
+	headerBackgroundSkin: Embed(source="skins/DataGrid_headerBackgroundSkin.png");
+	headerSeparatorSkin: Embed(source="skins/DataGrid_headerSeparatorSkin.png");
+	sortArrowSkin: Embed(source="skins/DataGrid_sortArrowSkin.png");
+	stretchCursor: Embed(source="skins/DataGrid_stretchCursor.png");
+	verticalScrollBarStyleName: dataGridVerticalScrollBar;
+	rollOverColor: #1D4B68;
+	selectionColor: #99BFD7;
+	headerStyleName: dataGridHeader;
+}
+.dataGridVerticalScrollBar
+{
+	borderSkin: Embed(source="file:///C|/Documents and Settings/Patrick/My Documents/sites/BATUCADA/lbolinhas1.jpg");
+}
+.dataGridHeader
+{
+}
