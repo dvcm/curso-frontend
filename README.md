@@ -20,3 +20,14 @@ São ramificações / versões paralelas
 - develop
 - DOD Definition of Done: criterios de aceite
 - versionamento 1.0.0
+
+## Conveitos de Versionamento
+- Hitorico
+- Controle de versão
+- Quem alterou
+- o que alterou
+- Quando alterou
+- Todos os arquivos
+- Evolução continua
+
+
