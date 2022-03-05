@@ -13,6 +13,10 @@ Informação de alteração
 ## Git Flow
 Fluxo do Git
 
+## Confirgura o GitFlow
+- git flow init
+- git flow feature start {nome-da-feature}
+
 ## Branchs
 São ramificações / versões paralelas
 
@@ -20,6 +24,21 @@ São ramificações / versões paralelas
 - develop
 - DOD Definition of Done: criterios de aceite
 - versionamento 1.0.0
+
+> git checkout -b dev (cria uma branch)
+> git checkout master (mudar de branch)
+
+## Merge
+Mescla branchs
+Voce pode precisar resolver conflitos manualmente
+
+## Pull Rwquests
+Mescla de branchs no repositório
+Permite code review
+O repositório resolve os conflitos automaticamente
+
+
+
 
 ## Conveitos de Versionamento
 - Hitorico
