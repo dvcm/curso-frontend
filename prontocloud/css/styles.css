@@ -1,262 +1,267 @@
-
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    background-color: #f5f5f5; 
-    font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5f5; 
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-container {
-    display: block;
-    width: 100vw;
-    margin: 0 auto;
+  display: block;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .container {
-    display: block;
-    float: left;
-    padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    max-width: 1198px;
-    background: #fff;
+  display: block;
+  float: left;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  max-width: 1198px;
+  background: #fff;
 }
 
 header {
-    background: #fff;
-    display: block;
-    float: left;
-    padding: 20px;
-    width: 100%;
-    border-bottom: 1px solid #f48000;
+  background: #fff;
+  display: block;
+  float: left;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid #f48000;
 }
 
 h1 {
-    font-size: 2.4rem;
-    color: #f48000;
-    margin-bottom: 20px;
+  font-size: 2.4rem;
+  color: #f48000;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #f48000;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f48000;
+  margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 1.8rem;
-    color: #f48000;
-    margin-bottom: 20px;
-    padding-top: 10px;
+  font-size: 1.8rem;
+  color: #f48000;
+  margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 h4 {
-    font-size: 1.6rem;
-    color: #f48000;
-    margin-bottom: 10px;
-    padding-top: 10px;
+  font-size: 1.6rem;
+  color: #f48000;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 p {
-    margin-bottom: 10px;
-    line-height: 1.4;
-    color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: #333;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #tenho-interesse {
-  /*  background-color: #b8c8d6; */
-    width: 100%;
+/*  background-color: #b8c8d6; */
+  width: 100%;
 }
 #sobre{
-    background-color: #b8c8d6;
-    width: 100%;
-    border-radius: 15px;
+  background-color: #b8c8d6;
+  width: 100%;
+  border-radius: 15px;
 }
 
 #tenho-interesse form,
 .cognito.c-med .c-forms-form,
 .cognito.c-med .c-forms-form div {
-    background-color: #b8c8d6 !important;
+  background-color: #b8c8d6 !important;
 }
 
 #tenho-interesse .cognito .c-forms-form .c-forms-form-title h2,
 #tenho-interesse .cognito label[for], .cognito input[type=radio], .cognito input[type=checkbox] {
-    color: #385874;
+  color: #385874;
 }
 
 ol {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 ol li {
-    font-size: 1.4rem;
-    color: #454545;
+  font-size: 1.4rem;
+  color: #454545;
 }
 
 section {
-    background-color: #fff;
-    display: block;
-    float: left;
-    font-size: 1.5rem; /* equivalente a 15px */ 
-    padding: 20px;
-    width: 100%;
+  background-color: #fff;
+  display: block;
+  float: left;
+  font-size: 1.5rem; /* equivalente a 15px */ 
+  padding: 20px;
+  width: 100%;
 }
 
 section nav {
-    display: block;
-    float: left;
-    width: 30%;
+  display: block;
+  float: left;
+  width: 30%;
 }
 
 nav li {
-    background-color: #efefef;
-    margin: 1px 20px 1px 0;
-    padding: 10px;
+  background-color: #efefef;
+  margin: 1px 20px 1px 0;
+  padding: 10px;
+  list-style-type: none;
 }
 
 nav li:hover {
-    background-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 nav a {
-    text-decoration: none;
-    color: #254159;
+  text-decoration: none;
+  color: #254159;
 }
 
 nav a:hover {
-    color: #385874;
+  color: #385874;
 }
 
 
 section article {
-    display: block;
-    float: left;
-    width: 70%;
+  display: block;
+  float: left;
+  width: 70%;
 }
 
 footer {
-    background-color: #f48000;  
-    display: block;
-    float: left;
-    padding: 20px;
-    width: 100%;
+  background-color: #f48000;  
+  display: block;
+  float: left;
+  padding: 20px;
+  width: 100%;
 }
 
 footer p {
-    color: #ffffff;
-    font-size: 1.4rem;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 footer small {
-    font-size: 80%;
-    display: block;
+  font-size: 80%;
+  display: block;
 }
 
 .cognito {
-    height: 399px !important;
-    overflow: hidden !important;
+  height: 399px !important;
+  overflow: hidden !important;
+}
+
+#desenvolvido p {
+  text-align: center;
 }
 
 @media (max-width: 425px) {
-    section nav,
-    section article,
-    #tenho-interesse {
-        width: 100%;
-        background: none;
-    }  
+  section nav,
+  section article,
+  #tenho-interesse {
+      width: 100%;
+      background: none;
+  }  
 
-    @media (max-width: 425px){
-        p, h1,h2,h3,h4 {
-            font-size: 30px;
-        }
-    }
+  @media (max-width: 425px){
+      p, h1,h2,h3,h4 {
+          font-size: 30px;
+      }
+  }
 
-    @media (max-width: 425px){
-        h1 {
-            font-size: 37px;
-        }
-    }
-    @media (max-width: 425px){
-        h2 {
-            font-size: 34px;
-        }
-    }
-    @media (max-width: 425px){
-        h3 {
-            font-size: 32px;
-        }
-    }
-    @media (max-width: 425px){
-        h4 {
-            font-size: 30px;
-        }
-    }
-    @media (max-width: 425px){
-        section {
-            font-size: 2.5rem;
-        }
-    }
-    @media (max-width: 425px){
-        ol li, footer p {
-            font-size: 2.5rem;
-        }
-    }
+  @media (max-width: 425px){
+      h1 {
+          font-size: 37px;
+      }
+  }
+  @media (max-width: 425px){
+      h2 {
+          font-size: 34px;
+      }
+  }
+  @media (max-width: 425px){
+      h3 {
+          font-size: 32px;
+      }
+  }
+  @media (max-width: 425px){
+      h4 {
+          font-size: 30px;
+      }
+  }
+  @media (max-width: 425px){
+      section {
+          font-size: 2.5rem;
+      }
+  }
+  @media (max-width: 425px){
+      ol li, footer p {
+          font-size: 2.5rem;
+      }
+  }
 
-    .container {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
+  .container {
+      padding-left: 1%;
+      padding-right: 1%;
+  }
 }
 
 @media (max-width: 768px) {
-    section nav,
-    section article,
-    #tenho-interesse {
-        width: 100%;
-        background: none;
-    }  
+  section nav,
+  section article,
+  #tenho-interesse {
+      width: 100%;
+      background: none;
+  }  
 
-    @media (max-width: 768px){
-        p, h1,h2,h3,h4 {
-            font-size: 30px;
-        }
-    }
+  @media (max-width: 768px){
+      p, h1,h2,h3,h4 {
+          font-size: 30px;
+      }
+  }
 
-    @media (max-width: 768px){
-        h1 {
-            font-size: 37px;
-        }
-    }
-    @media (max-width: 768px){
-        h2 {
-            font-size: 34px;
-        }
-    }
-    @media (max-width: 768px){
-        h3 {
-            font-size: 32px;
-        }
-    }
-    @media (max-width: 768px){
-        h4 {
-            font-size: 30px;
-        }
-    }
-    @media (max-width: 768px){
-        section {
-            font-size: 2.5rem;
-        }
-    }
-    @media (max-width: 768px){
-        ol li, footer p {
-            font-size: 2.5rem;
-        }
-    }
+  @media (max-width: 768px){
+      h1 {
+          font-size: 37px;
+      }
+  }
+  @media (max-width: 768px){
+      h2 {
+          font-size: 34px;
+      }
+  }
+  @media (max-width: 768px){
+      h3 {
+          font-size: 32px;
+      }
+  }
+  @media (max-width: 768px){
+      h4 {
+          font-size: 30px;
+      }
+  }
+  @media (max-width: 768px){
+      section {
+          font-size: 2.5rem;
+      }
+  }
+  @media (max-width: 768px){
+      ol li, footer p {
+          font-size: 2.5rem;
+      }
+  }
 }
