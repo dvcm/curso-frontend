@@ -4,10 +4,10 @@ Patrick
 
 
 ## Para remover uma branch (ramo) local no Git, basta rodar o seguinte comando:
-git branch -d nome-da-branch. Bash.
-git branch -D nome-da-branch. Bash.
-git push origin --delete nome-da-branch. Bash.
-git push origin :nome-da-branch. Bash.
+- git branch -d nome-da-branch. Bash.
+- git branch -D nome-da-branch. Bash.
+- git push origin --delete nome-da-branch. Bash.
+- git push origin :nome-da-branch. Bash.
 
 
 ## Commits
