@@ -1,7 +1,16 @@
+# curso-frontend
+curso python 2022
 # Ebac Escola britanica de artes criativas e tecnologia
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+curso python 5/3/2022
+Patrick
 
-- Curso Desenvolvedor Full Stack Python 5/3/2022
+
+## Para remover uma branch (ramo) local no Git, basta rodar o seguinte comando:
+- git branch -d nome-da-branch. Bash.
+- git branch -D nome-da-branch. Bash.
+- git push origin --delete nome-da-branch. Bash.
+- git push origin :nome-da-branch. Bash.
+
 
 ## Commits
 Informação de alteração
@@ -33,17 +42,21 @@ São ramificações / versões paralelas
 Mescla branchs
 Voce pode precisar resolver conflitos manualmente
 
-## Pull Requests
+## Pull Rwquests
 Mescla de branchs no repositório
 Permite code review
 O repositório resolve os conflitos automaticamente
 
 
+
+
 ## Conveitos de Versionamento
-- Histórico
+- Hitorico
 - Controle de versão
 - Quem alterou
 - o que alterou
 - Quando alterou
 - Todos os arquivos
 - Evolução continua
+
+
