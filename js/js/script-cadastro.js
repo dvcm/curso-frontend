@@ -63,7 +63,7 @@ if(formulario1) //se existir o formulario 1
         event.preventDefault();
 
         if(this.value == ""){
-            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho";
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em vermelho";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -76,6 +76,7 @@ if(formulario1) //se existir o formulario 1
     });
 
 }
+
 
 function validaCampoNumerico(elemento){
 
@@ -90,7 +91,7 @@ function validaCampoNumerico(elemento){
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -99,7 +100,6 @@ function validaCampoNumerico(elemento){
     });
 
 }
-
 
 function validaEmail(elemento){
 
@@ -113,7 +113,7 @@ function validaEmail(elemento){
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em destaque";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -122,6 +122,70 @@ function validaEmail(elemento){
     });
 
 }
+
+function validaTelefone(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        if(this.value == ""){
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        } else {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        }
+
+    });
+
+}
+
+function validaCep(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        if(this.value == ""){
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        } else {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        }
+
+    });
+
+}
+
+function validaCidade(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        if(this.value == ""){
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        } else {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        }
+
+    });
+
+}
+
 
 function validaUF(elemento){
 
@@ -151,6 +215,9 @@ function validaUF(elemento){
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 let camposNumericos = document.querySelectorAll('input.numerico');
 let camposEmail = document.querySelectorAll('input.email');
+let camposTelefone = document.querySelectorAll('input.telefone');
+let camposCep = document.querySelectorAll('input.cep');
+let camposCidade = document.querySelectorAll('input.cidade');
 let camposUF = document.querySelectorAll('input.uf');
 
 
@@ -161,9 +228,20 @@ for( let emFoco of camposObrigatorios) {
 for( let emFoco of camposNumericos) {
     validaCampoNumerico(emFoco);
 }
-
 for( let emFoco of camposEmail) {
     validaEmail(emFoco);
+}
+
+for( let emFoco of camposTelefone) {
+    validaTelefone(emFoco);
+}
+
+for( let emFoco of camposCep) {
+    validaCep(emFoco);
+}
+
+for( let emFoco of camposCidade) {
+    validaCidade(emFoco);
 }
 
 for( let emFoco of camposUF) {
