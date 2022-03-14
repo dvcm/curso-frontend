@@ -160,7 +160,7 @@ function validaUF(elemento){
 
       event.preventDefault();
 
-      const ufValido = /^[a-z0-9]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+      const ufValido = /^[a-z]+(\.[a-z]+)?/i;
       if(this.value.match(ufValido)) {
           document.querySelector('.mensagem').innerHTML = "";
           this.classList.remove('erro');
