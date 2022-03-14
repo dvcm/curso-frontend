@@ -140,8 +140,9 @@ function validaUF(elemento){
           this.parentNode.classList.add('erro');
           return false;
       }
-      console.log(ufValido);
       console.log(validaUF);
+      console.log(ufValido);
+      console.log(camposUF);
   });
 
 }
