@@ -8,21 +8,34 @@ function calcularMedia( notas ) {
 }
 
 let media; // escopo global
+
 function aprovacao( notas ) {
-  let media = calcularMedia( notas ); // escopo da função
-  let condicao = media >= 8 ? "aprovado" : "reprovado";
-  return 'Média: ' + media + ' - Resultado: ' + condicao;
+
+    let media = calcularMedia( notas ); // escopo da função
+
+    let condicao = media >= 8 ? "aprovado" : "reprovado";
+
+    return 'Média: ' + media + ' - Resultado: ' + condicao;
 }
 
 // Função Recursivas
+
 function contagemRegressiva(numero){
-  console.log(numero);  
-  let proximoNumero = numero - 1;
-  if(proximoNumero > 0)
-      contagemRegressiva(proximoNumero);
+
+    console.log(numero);  
+
+    let proximoNumero = numero - 1;
+
+    if(proximoNumero > 0)
+
+    contagemRegressiva(proximoNumero);
 }
 
 // contagemRegressiva(50);
+
+
+
+
 
 /* 
 * Formulário envio de dados para cálculo da média 
@@ -30,12 +43,13 @@ function contagemRegressiva(numero){
 const formulario1 = document.getElementById('formulario-02');
 
 if(formulario1) //se existir o formulario 1
+
   formulario1.addEventListener('submit', function( evento ){
 
       evento.preventDefault();
       evento.stopPropagation();
 
-      if( this.getAttribute('class') ) {
+      if( this.getAttribute('class')) {
           return false;
       }
       
@@ -51,7 +65,10 @@ if(formulario1) //se existir o formulario 1
               notas.push(numero);
           }
       }
+      console.log(notas);
+
       texto = aprovacao(notas)
+      
       document.getElementById('resultado').innerHTML = texto;
   });
 
@@ -247,34 +264,3 @@ for( let emFoco of camposCidade) {
 for( let emFoco of camposUF) {
   validaUF(emFoco);
 }
-
-let estados = [
-    'AC - Acre',
-    'AL - Alagoas',
-    'AP - Amapá',
-    'AM - Amazonas',
-    'BA - Bahia',
-    'CE - Ceará',
-    'DF - Distrito Federal',
-    'ES - Espírito Santo',
-    'GO - Goías',
-    'MA - Maranhão',
-    'MT - Mato Grosso',
-    'MS - Mato Grosso do Sul',
-    'MG - Minas Gerais',
-    'PA - Pará',
-    'PB - Paraíba',
-    'PR - Paraná',
-    'PE - Pernambuco',
-    'PI - Piauí',
-    'RJ - Rio de Janeiro',
-    'RN - Rio Grande do Norte',
-    'RS - Rio Grande do Sul',
-    'RO - Rondônia',
-    'RR - Roraíma',
-    'SC - Santa Catarina',
-    'SP - São Paulo',
-    'SE - Sergipe',
-    'TO - Tocantins'
-    ];
-    var vetSiglas = new Array("ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mt", "ms", "mg", "pa", "pb", "pr", "pe", "pi", "rj", "rn", "ro", "rs", "rr", "sc", "se", "sp", "to");
