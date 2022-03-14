@@ -1,34 +1,3 @@
-let estados = [
-  'AC - Acre',
-  'AL - Alagoas',
-  'AP - Amapá',
-  'AM - Amazonas',
-  'BA - Bahia',
-  'CE - Ceará',
-  'DF - Distrito Federal',
-  'ES - Espírito Santo',
-  'GO - Goías',
-  'MA - Maranhão',
-  'MT - Mato Grosso',
-  'MS - Mato Grosso do Sul',
-  'MG - Minas Gerais',
-  'PA - Pará',
-  'PB - Paraíba',
-  'PR - Paraná',
-  'PE - Pernambuco',
-  'PI - Piauí',
-  'RJ - Rio de Janeiro',
-  'RN - Rio Grande do Norte',
-  'RS - Rio Grande do Sul',
-  'RO - Rondônia',
-  'RR - Roraíma',
-  'SC - Santa Catarina',
-  'SP - São Paulo',
-  'SE - Sergipe',
-  'TO - Tocantins'
-  ];
-  var vetSiglas = new Array("ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mt", "ms", "mg", "pa", "pb", "pr", "pe", "pi", "rj", "rn", "ro", "rs", "rr", "sc", "se", "sp", "to");
-
 function calcularMedia( notas ) {
   let soma = 0;
   for( c = 0; c < notas.length; c++) {
@@ -171,7 +140,8 @@ function validaUF(elemento){
           this.parentNode.classList.add('erro');
           return false;
       }
-
+      console.log(ufValido);
+      console.log(validaUF);
   });
 
 }
@@ -198,3 +168,34 @@ for( let emFoco of camposEmail) {
 for( let emFoco of camposUF) {
   validaUF(emFoco);
 }
+
+let estados = [
+    'AC - Acre',
+    'AL - Alagoas',
+    'AP - Amapá',
+    'AM - Amazonas',
+    'BA - Bahia',
+    'CE - Ceará',
+    'DF - Distrito Federal',
+    'ES - Espírito Santo',
+    'GO - Goías',
+    'MA - Maranhão',
+    'MT - Mato Grosso',
+    'MS - Mato Grosso do Sul',
+    'MG - Minas Gerais',
+    'PA - Pará',
+    'PB - Paraíba',
+    'PR - Paraná',
+    'PE - Pernambuco',
+    'PI - Piauí',
+    'RJ - Rio de Janeiro',
+    'RN - Rio Grande do Norte',
+    'RS - Rio Grande do Sul',
+    'RO - Rondônia',
+    'RR - Roraíma',
+    'SC - Santa Catarina',
+    'SP - São Paulo',
+    'SE - Sergipe',
+    'TO - Tocantins'
+    ];
+    var vetSiglas = new Array("ac", "al", "am", "ap", "ba", "ce", "df", "es", "go", "ma", "mt", "ms", "mg", "pa", "pb", "pr", "pe", "pi", "rj", "rn", "ro", "rs", "rr", "sc", "se", "sp", "to");
