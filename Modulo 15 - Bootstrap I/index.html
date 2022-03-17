@@ -33,10 +33,69 @@
     </div>
   </header>
 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="ratio ratio-21x9">
+                <img src="./imagem/tosh-atabaque.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="h5">Toshiro</h5>
+                <p class="txtcarrousel">construa seu próprio instrumento</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ratio ratio-21x9">
+                <img src="./imagem/pandeiro-cravo_2-450x450.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="h5">Pandeiro Cravo</h5>
+                <p class="txtcarrousel">Instrumento leve e versatil para estudadntes</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="ratio ratio-21x9">
+                <img src="./imagem/pandeiro-capoeira-10x45_2-450x450.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="h5">Linha de pandeiros 10"</h5>
+                <p class="txtcarrousel">Resistente e com som perfeito</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
   <section id="sobre">
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-sm-12">
+          </br>
           <h1>Descubra o poder dos Instrumentos Musicais</h1>
           <p>Toque um instrumento musical desde a infância!
 
@@ -48,14 +107,17 @@
             Estude musica, aprenda novas habilidades como memória, organização e controle das emoções.</p>
 
           <a class="btn btn-lg btn-success">Entre em contato</a>
+
+
         </div>
+        </br> <br>
         <div class="col-md-5 col-sm-12">
-          <img src="./imagem/tosh-atabaque.jpg" alt="Imagem" class="tosh img-fluid">
+          <img src="./imagem/djembes-1-1024x575.jpeg" alt="Imagem" class="tosh img-fluid">
         </div>
       </div>
     </div>
   </section>
-
+  <div class="clearfix"></div>
   <section id="produtos">
 
     <div class="container">
@@ -66,17 +128,8 @@
             <img src="./imagem/pandeiro-capoeira-10x45_2-450x450.jpg" alt="Imagem" class="img-fluid">
             <div class="card-body">
               <h5 class="card-title">Pandeiro 10" </h5>
-              <p class="card-text">Pandeiro feito de madeira de pinho, com platinela de aço, pele de cabra, com chave afinação </p>
+              <p class="card-text">Pandeiro feito de madeira de pinho, com platinela de aço, pele de cabra </p>
               <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">comprar</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="./imagem/pandeirao-genipapo-10_1_1-450x450.jpg" alt="Imagem" class="img-fluid">
-            <div class="card-body">
-              <h5 class="card-title">Pandeiro Jenipapo </h5>
-              <p class="card-text">Pandeiro feito de jenipapo, com platinela de lata de oleo, pele de cabra, sem afinação</p>
-              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">comprar</a>
             </div>
           </div>
 
@@ -88,6 +141,18 @@
               <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">comprar</a>
             </div>
           </div>
+
+          <div class="card">
+            <img src="./imagem/pandeirao-genipapo-10_1_1-450x450.jpg" alt="Imagem" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Pandeiro Jenipapo </h5>
+              <p class="card-text">Pandeiro feito de jenipapo, com platinela de lata de oleo, pele de cabra, sem
+                afinação</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">comprar</a>
+            </div>
+          </div>
+
+
 
         </div>
       </div>
@@ -103,22 +168,36 @@
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <h2>Contato</h2>
-          <p>Curtiu? Deixe uma mensagem e ganhe um desconto de 20%</p>
+
+          <img src="./imagem/djembes-1-1024x575.jpeg" alt="Imagem" class="tosh img-fluid">
+          <p class="warning">Curtiu? <br>Faça uma cotação e ganhe um desconto de 20% >></p>
         </div>
+
         <div class="col-md-6 col-sm-12">
           <form class="form">
-            <div class="input-group">
-              <div class="form-control">
-                <input text="text" class="form-control" name="nome" placeholder="digite seu nome">
+            <div class="form-control">
+
+
+              <div class="input-group">
+
+                <input text="text" class="form-control" name="nome" placeholder="digite seu nome" required>
               </div>
               <div class="input-group">
-                <input text="text" class="form-control" name="email" placeholder="digite seu email">
+                <input text="text" class="form-control" name="email" placeholder="digite seu email" required>
               </div>
+
+
               <div class="input-group">
-                <textarea class="form-control" cols="" rows="5"></textarea>
+                <input text="text" class="form-control" name="telefone" placeholder="Deixe seu Telefone" required>
               </div>
-              <button type="submit" class="btn btn-lg btn-success"> Solicitar Cotação </button>
+
+              <div class="input-group">
+                <textarea class="form-control" cols="" rows="7" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-success"> Solicitar Cotação </button>
           </form>
+
         </div>
       </div>
     </div>
@@ -130,7 +209,7 @@
       <div class="modal-content">
         <div class="modal-header">
 
-          <h5 class="modal-title">Pandeito 10"</h5>
+          <h5 class="modal-title">Pandeiro 10"</h5>
           <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
 
@@ -171,7 +250,7 @@
       <div class="modal-content">
         <div class="modal-header">
 
-          <h5 class="modal-title">Pandeito Jenipapo 10" pele de cabra"</h5>
+          <h5 class="modal-title">Pandeiro Jenipapo 10" pele de cabra"</h5>
           <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
 
@@ -211,7 +290,7 @@
       <div class="modal-content">
         <div class="modal-header">
 
-          <h5 class="modal-title">Pandeito Cravo"</h5>
+          <h5 class="modal-title">Pandeiro Cravo"</h5>
           <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
 
@@ -245,7 +324,16 @@
       </div>
     </div>
   </div>
-<!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script>
+    var myCarousel = document.querySelector('#carouselExampleCaptions')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 5000,
+
+    })
+
+  </script>
 </body>
+
 </html>

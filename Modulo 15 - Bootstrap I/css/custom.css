@@ -17,6 +17,7 @@ input{
 }
 .tosh{
   padding-bottom: 1rem;
+  padding-top: 12px;
 }
 
 .nav {
@@ -34,4 +35,24 @@ input{
   color: #fdcb0d;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.h5{
+  color: var(--bs-yellow);
+  font-size: 2rem;
+}
+
+.txtcarrousel{
+  color: var(--bs-yellow);
+  font-size: 1.4rem;
+}
+
+
+.form-control {
+ /* padding-top: 10px;*/
+}
+.warning{
+  color:#198754;
+  font-size: large;
+  font-weight: 800;
 }
