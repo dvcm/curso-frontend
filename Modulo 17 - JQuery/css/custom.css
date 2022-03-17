@@ -1,0 +1,58 @@
+.card {
+  width: 33%;
+  float: left;
+  margin: 0px;
+}
+.section{
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+input{
+  margin-bottom: 1rem;
+}
+.logo{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.tosh{
+  padding-bottom: 1rem;
+  padding-top: 12px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-top: 20px;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fdcb0d;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.h5{
+  color: var(--bs-yellow);
+  font-size: 2rem;
+}
+
+.txtcarrousel{
+  color: var(--bs-yellow);
+  font-size: 1.4rem;
+}
+
+
+.form-control {
+ /* padding-top: 10px;*/
+}
+.warning{
+  color:#198754;
+  font-size: large;
+  font-weight: 800;
+}
