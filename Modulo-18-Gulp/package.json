@@ -10,7 +10,7 @@
   "author": "Patrick Passarella",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-image": "^6.2.1",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "resolve-url": "^0.2.1"
   }
 }
