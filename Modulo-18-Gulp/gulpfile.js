@@ -44,7 +44,6 @@ function tarefasImagem(){
 }
 
 
-
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
