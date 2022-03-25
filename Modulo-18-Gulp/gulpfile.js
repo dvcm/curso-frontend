@@ -61,6 +61,7 @@ function tarefasImagem(callback){
         }))
         .pipe(gulp.dest('./dist/images'))
         return callback()
+        
 }
 
 // POC - Prova de conceitos
