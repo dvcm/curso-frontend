@@ -3,13 +3,14 @@ const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
-const image = require('gulp-image');
-const stripJs = require('gulp-strip-comments')
-const stripCss = require('gulp-strip-css-comments')
+const image = import('gulp-imagemin');
+//const stripJs = require('gulp-strip-comments')//
+//const stripCss = require('gulp-strip-css-comments')//
+const { series, parallel } = require('gulp')
 
-function tarefasCSS(cb) {
+function tarefasCSS(callback) {
 
-    return gulp.src([
+     gulp.src([
             './node_modules/bootstrap/dist/css/bootstrap.css',
             './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
             './vendor/owl/css/owl.css',
@@ -24,9 +25,9 @@ function tarefasCSS(cb) {
 
 }
 
-function tarefasJS(){
+function tarefasJS(callback){
 
-    return gulp.src([
+     gulp.src([
             './node_modules/jquery/dist/jquery.js',
             './node_modules/bootstrap/dist/js/bootstrap.js',
             './vendor/owl/js/owl.js',
@@ -39,10 +40,12 @@ function tarefasJS(){
         .pipe(uglify())                     // minifica js
         .pipe(rename({ suffix: '.min'}))    // scripts.min.js
         .pipe(gulp.dest('./dist/js'))       // cria arquivo em novo diretório
+
+        return callback()
 }
 
 
-function tarefasImagem(){
+function tarefasImagem(callback){
     
     return gulp.src('./src/images/*')
         .pipe(image({
@@ -57,7 +60,21 @@ function tarefasImagem(){
             quiet: true
         }))
         .pipe(gulp.dest('./dist/images'))
+        return callback()
 }
+
+// POC - Prova de conceitos
+function tarefasHTML(callback){
+
+    gulp.src('./src/**/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./dist'))
+
+    return callback()
+
+}
+
+exports.default = parallel(tarefasHTML, tarefasJS, tarefasCSS)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
