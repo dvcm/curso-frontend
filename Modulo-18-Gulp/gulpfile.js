@@ -89,21 +89,17 @@ gulp.task('server', function(){
         }
     })
     gulp.watch('./src/**/*').on('change', process) //repete o processo de verificaçao na pasta src
-     gulp.watch('./dist/**/*').on('change', reload) // se quiser ver a alteração na pasta dist habilitar este comando
-    
+    gulp.watch('./dist/**/*').on('change', reload) // se quiser ver a alteração na pasta dist habilitar este comando
 })
 
-function end(callback){
-
+function end(cb){
     console.log("tarefas concluidas")
+    return cb()
 }
 
-
-const process = parallel( tarefasHTML, tarefasJS, tarefasCSS ) //a variavel nao sera alterada na hora da execução
-
+const process = parallel( tarefasHTML, tarefasJS, tarefasCSS, end ) //a variavel nao sera alterada na hora da execução
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
-
 
 exports.default = process
