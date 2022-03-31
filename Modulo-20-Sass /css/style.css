@@ -1,0 +1,182 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0; 
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div,
+p {
+  display: block;
+}
+
+header,
+section,
+footer {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+section {
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #f2f2f0;
+}
+
+p {
+  color: rgb(237, 55, 55);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+h1 {
+  color: rgb(237, 55, 55);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-top: 3rem;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h2 {
+  color: rgb(107, 90, 90);
+  font-size: 2.2rem;
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h3 {
+  color: rgba(32, 17, 165, 0.87);
+  font-size: 1.5rem;
+}
+
+header,
+footer {
+  background-color: #f2f2f0;
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(30, 0, 128);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(0, 70, 128);
+  color: white;
+}
+
+.blocks {
+  padding: 3rem 0;
+}
+.blocks h2 {
+  color: rgb(237, 55, 55);
+}
+.blocks ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  padding: 1rem 0;
+  width: 100%;
+}
+.blocks li {
+  color: rgb(107, 90, 90);
+  display: block;
+  margin: 1.5rem auto;
+  width: 30%;
+}
+.blocks li .img-container {
+  display: block;
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+.blocks li a {
+  background-color: rgb(237, 55, 55);
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 2.2rem;
+  margin: 3rem auto 1.5rem;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cars h2 {
+  color: rgb(107, 90, 90);
+}
+.cars li {
+  color: rgb(0, 0, 0);
+  border: 10px dotted black;
+  border: 10px dotted black;
+  padding: 5px 5px;
+  background: #ef171c;
+}
+.cars li a {
+  background-color: rgba(32, 17, 165, 0.87);
+}
+
+.audi {
+  width: 100%;
+  box-shadow: 10px 11px 12px 2px rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.destack {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1.5rem;
+}
+.destack h1 {
+  color: rgba(32, 17, 165, 0.87);
+  float: left;
+  font-size: 3rem;
+  margin-top: 0;
+}
+.destack h2 {
+  float: left;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  color: rgba(255, 41, 41, 0.822);
+}
+.destack img {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+}
+.destack p {
+  font-size: 1.5rem;
+  color: rgb(237, 55, 55);
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
