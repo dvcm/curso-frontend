@@ -54,11 +54,17 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: $font-big;
     margin-top: $mt-02;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+   
 }
 
 h2 {
     color: $color-02;
     font-size: $font-medium;
+    text-decoration-line: overline;
+    text-decoration-color: red;
 }
 
 h3 {
@@ -70,3 +76,18 @@ header,
 footer {
     background-color: $bg-color
 }
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(30, 0, 128);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(0, 70, 128);
+    color: white;
+  }

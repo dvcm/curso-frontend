@@ -3,10 +3,20 @@
         color: $color-02;
     }
     li {
-        color: $color-04;
+        color: $color-06;
+        border: 10px dotted black;
+        border: 10px dotted black;
+        padding: 5px 5px;
+        background: #ef171c;
 
         a {
-            background-color: $color-default;
+            background-color: $color-03;
         }
     }
+}
+.audi {
+
+width: 100%;
+box-shadow: 10px 11px 12px 2px rgb(0 0 0 / 10%), 0 4px 20px 0 rgb(0 0 0 / 10%);
+  text-align: center;
 }
