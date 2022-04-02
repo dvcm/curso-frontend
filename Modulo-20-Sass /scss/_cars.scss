@@ -1,13 +1,33 @@
+@mixin theme ($theme: $color-03, $bg: $color-04){
+    border: 1px solid $theme;
+    background-color: $bg;
+}
+
 .cars {
     h2 {
         color: $color-02;
+        @include theme;
+    }
+    .destacks {
+        @include theme;
+    }
+    .destak {
+        @include theme($theme: $color-01, $bg: $bg-color);
+        color: $color-04;
     }
     li {
-        color: $color-06;
-        border: 10px dotted black;
-        border: 10px dotted black;
+        @include theme($theme: $color-default, $bg: $bg-color);
+        color: $color-01;
+        display: flex;
+        float: left;
+        height: max-content;
+        align-items: baseline;
+        flex-flow: column;
+        border: 10px double rgb(255, 255, 255);
+        border: 10px dotted rgb(250, 228, 228)k;
         padding: 5px 5px;
-        background: #ef171c;
+        background: #042d44e1;
+        
 
         a {
             background-color: $color-03;
