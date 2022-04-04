@@ -1,10 +1,10 @@
-const { parallel } = require('gulp')
+const { parallel, series } = require('gulp')
 const gulp = require('gulp')
 const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
-const image = import('gulp-image')
+const image = require('gulp-imagemin')
 const stripJs = require('gulp-strip-comments')
 const stripCss = require('gulp-strip-css-comments')
 const htmlmin = require('gulp-htmlmin')
@@ -24,7 +24,7 @@ function tarefasCSS(cb) {
             './vendor/jquery-ui/jquery-ui.css'
         ])
         .pipe(stripCss())                   // remove comentários css   
-        .pipe(concat('style.css'))           // mescla arquivos
+        .pipe(concat('libs.css'))           // mescla arquivos
         .pipe(cssmin())                     // minifica css
         .pipe(rename({ suffix: '.min'}))    // libs.min.css
         .pipe(gulp.dest('./dist/css'))      // cria arquivo em novo diretório
@@ -79,6 +79,7 @@ function tarefasImagem(){
             quiet: true
         }))
         .pipe(gulp.dest('./dist/images'))
+       
 }
 
 // POC - Proof of Concept
@@ -116,5 +117,4 @@ exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
 exports.sass = tarefasSASS
-
 exports.default = process
