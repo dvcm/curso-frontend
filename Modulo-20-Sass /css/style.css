@@ -28,9 +28,14 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 85.7142857143;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 300;
+  }
+}
 img {
   width: 100%;
   height: auto;
