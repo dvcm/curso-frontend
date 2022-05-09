@@ -1,0 +1,21 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    align-items: center;
+    padding: auto;
+    float: left;
+
+    &__item {
+        color: $font-color-primary;
+        font-size: $font-size-nav;
+        text-decoration: none;
+        position: relative;
+        &:hover {
+            color: $color-secondary;
+            animation: toTop;
+            animation-duration: 1s;
+        }
+    }
+}

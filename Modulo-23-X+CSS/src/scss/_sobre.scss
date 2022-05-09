@@ -1,0 +1,24 @@
+
+#sobre {
+    background-color: none;
+
+    
+    .container {
+        background-color: #607d8b;
+        border-radius: .5rem;
+        margin: 2rem auto;
+        padding: 0 2rem 2rem;
+        box-shadow: 0 0 2px rgba(231, 58, 0, 0.863); 
+      
+       
+    }
+    
+
+    article {
+        
+        p {
+            font-size: $font-size-default;
+            color: $font-color-primary;
+        }
+    }
+}
