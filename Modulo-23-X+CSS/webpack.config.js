@@ -5,6 +5,7 @@ const HtmlWebpackLiveReload = require('html-webpack-live-reload-plugin')
 const ImageminPlugin = require('imagemin-webpack-plugin')
 
 module.exports = {
+    mode : 'none',
 
     entry: './src/js/index.js',
     devtool: 'eval-source-map',
@@ -63,7 +64,7 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html',
             minify: {
-                removeComments: true,
+                removeComments: false,
                 collapseWhitespace: true
             }
         }),

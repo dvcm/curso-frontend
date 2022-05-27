@@ -6,10 +6,11 @@
     align-items: center;
     padding: auto;
     float: left;
+    $font-size-nav: 1.7em;
 
     &__item {
         color: $font-color-primary;
-        font-size: $font-size-nav;
+        
         text-decoration: none;
         position: relative;
         &:hover {
