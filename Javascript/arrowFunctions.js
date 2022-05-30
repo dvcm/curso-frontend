@@ -1,0 +1,18 @@
+function Pessoa() { //Podemos dizer que Javascript é uma linguagem funcional. Tudo com exceção do código de execução global, é executado dentro de uma função. Mas uma função em Javascript é um objeto
+
+  // =>  arrow functions vc tem um ou mais paramentros(p1, p2, ..., pX) => ) { aqui dentro o codigo que sera executado }
+  // const pessoa = this 
+  
+  this.idade = 0
+
+  // setInterval(function(){  // função escrita de outra forma
+  //   console.log(pessoa.idade++)
+  // }, 200);
+
+ setInterval(() => {  // neste trecho utilizamos a arrowFunction para ilustrar a sua utilização
+    console.log(this.idade++) // comando que incrementa this.idade++ ) a idade a cada 2 segundos ,2000)
+ }, 2000);
+  
+}
+
+const p1 = new Pessoa()
