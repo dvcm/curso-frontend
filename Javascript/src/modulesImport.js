@@ -1,8 +1,8 @@
 // import boostrap from 'bootstrap'
 // import * as nomeQuaquer from './modulesExport'
-import Cachorro from './classes.js'
+import Cachorro from './classes';
 
-const cachorro = new Cachorro('cachorro')
-cachorro.falar()
-cachorro.comer()
-cachorro.dormir()
+const cachorro = new Cachorro('cachorro');
+cachorro.falar();
+cachorro.comer();
+cachorro.dormir();

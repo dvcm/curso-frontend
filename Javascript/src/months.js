@@ -41,7 +41,7 @@ let months = [
     },
     { 
         month: 'Setembro',
-        color: '',
+        color: 'roxo',
         days: 30
     },
     { 
@@ -59,10 +59,10 @@ let months = [
         color: 'branco',
         days: 31
     }
-]
+];
 
 function getMonths(){
-    return months
+    return months;
 }
 
-export default getMonths()
+export default getMonths();

@@ -1,3 +1,5 @@
+import { Animais } from "./moduleExports"
+
 class Animal {  // criando classes para cada ação do animal
 
   constructor (especie){  
@@ -22,13 +24,5 @@ class Cachorro extends Animal{ // classe que vai ser especica ou extendida a cla
 
 }
 
-const cachorro = new Cachorro('cachorro')
-cachorro.falar()
-cachorro.comer()
-cachorro.dormir()
 
-
-// resultado 
-//cachorro fala au au au au
-//cachorro come racao
-//cachorro dorme todo dia
+export default Cachorro
