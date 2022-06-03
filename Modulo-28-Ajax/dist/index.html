@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Exemplo de álbum Bootstrap</title>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos customizados para este template -->
+    <link href="./album/album.css" rel="stylesheet">
+    <link href="./css/form.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+   
+      </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Sobre</h4>
+              <p class="text-muted">Estou aproveitando o bootstrap layout e scripts para implementar e carregar arquivos json https://jsonplaceholder.typicode.com/photos no site.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contato</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Me siga no Twitter</a></li>
+                <li><a href="#" class="text-white">Curta no Facebook</a></li>
+                <li><a href="#" class="text-white">Me envie um e-mail</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Patrick Passarella</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Projeto Posts Fotografia com Ajax </h1>
+          <p class="text-muted">Neste projeto, gostaria que ao carregar um novo post de fotografia, poderia adicionar em cada novo click, uma nova caixa ou box com o conteúdo atualizado, mas eu não consigo porque nao sei como fazer ainda este tipo de looping.  
+           </p>
+        </p>
+          <p>
+            <a href="x.html" class="btn btn-primary my-2">Slide Show Click</a>
+            <a href="#" class="btn btn-secondary my-2">Site</a>
+            <h1 class="jumbotron-heading">Projeto GitHub com Ajax </h1>
+            <p class="text-muted">Neste projeto, gostaria que ao carregar um novo Usuario do GitHub + a imagem, usando esta api => https://api.github.com/users a iamgem esta sendo descarregada ao tentar puxar o {avatar_url}.
+            </p>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+          
+            
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Caixa Original</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+           
+            
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="https://avatars.githubusercontent.com/u/1?v=4" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><div id="main"></div></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                   
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+               
+          
+                  <div id="posts"></div>
+                 
+                <div class="card-body">
+                  
+                  <div class="posts-item">
+                  </div>
+
+                </div>
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <section>
+            <h1>Posts Fotografia</h1>
+            <a class="button" id="loadPost">Carregar mais posts</a>
+        </section>
+        <hr />
+        <section>
+            <h1>Github</h1>
+            
+            <input type="text" placeholder="nome do usuário" id="username">
+            <hr /> 
+            <p> <br><br><br><br><br>
+
+              Codigo reciperado do GitHub<br><br><br>
+              [
+  {
+    "login": "mojombo",
+    "id": 1,
+    "node_id": "MDQ6VXNlcjE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mojombo",
+    "html_url": "https://github.com/mojombo",
+    "followers_url": "https://api.github.com/users/mojombo/followers",
+    "following_url": "https://api.github.com/users/mojombo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mojombo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mojombo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mojombo/subscriptions",
+    "organizations_url": "https://api.github.com/users/mojombo/orgs",
+    "repos_url": "https://api.github.com/users/mojombo/repos",
+    "events_url": "https://api.github.com/users/mojombo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mojombo/received_events",
+    "type": "User",
+    "site_admin": false
+  },</p>
+        </section>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src=""></script>
+    <script type='text/javascript'>
+      // import fetch from 'node-fetch'
+    let _data = {
+    title: "accusamus beatae ad facilis cum",
+    URL: "https://via.placeholder.com/150/92c952",
+    albumId: 1
+    }
+
+  const postContainer = document.getElementById('posts')
+  let postMarkup = ''
+let postLength = 0
+
+// Cadastra um post
+function setPost(data) {
+
+    fetch('https://jsonplaceholder.typicode.com/photos/', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type' : 'application/json; charset=UTF-8'
+        }
+    })
+    .then( response => response.json())
+    .then( data => console.log(data))
+    .catch(error => console.error(error))   
+}
+
+// Solicita todos os posts
+function getPosts() {
+    fetch('https://jsonplaceholder.typicode.com/photos/', {
+        headers: {
+            'Content-Type' : 'application/json; charset=UTF-8'
+        }
+    })
+    .then( response => response.json())
+    .then( data => { 
+        postLength = data.length
+        console.log(postLength)
+     })
+    .catch(error => console.error(error))  
+}
+
+// Solicita um post por ID
+function getPost(id) {
+    fetch('https://jsonplaceholder.typicode.com/photos/' + id, {
+        headers: {
+            'Content-Type' : 'application/json; charset=UTF-8'
+        }
+    })
+    .then( response => response.json())
+    .then( post => { 
+            postMarkup += `
+                <div class="posts-item" id="post-${post.id}">
+                  
+                  <p><img class="card-img-top" src=${post.thumbnailUrl}</p>
+                    <p>${post.title}</p>
+                </div>
+            `
+        postContainer.innerHTML = postMarkup
+     })
+    .catch(error => console.error(error))  
+}
+
+let postIndex = 1;
+getPosts()
+getPost(postIndex)
+
+const loadPost = document.getElementById('loadPost')
+
+loadPost.addEventListener('click', function(e) {
+    if(postIndex < postLength)
+        getPost(postIndex += 1)
+});
+
+    </script>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Voltar ao topo</a>
+        </p>
+        <p>Este exemplo de álbum é &copy; Bootstrap, mas, por favor, baixe e customize por conta própria.</p>
+        <p>Novo no Bootstrap? <a href="../../">Visite a página principal</a> ou leia nosso guia <a href="../../getting-started/">getting started</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
