@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Exemplo de álbum Bootstrap</title>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos customizados para este template -->
+    <link href="./album/album.css" rel="stylesheet">
+    <link href="./css/form.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    
+   
+      </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Sobre</h4>
+              <p class="text-muted">Estou aproveitando o bootstrap layout e scripts para implementar e carregar arquivos json https://jsonplaceholder.typicode.com/photos no site.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contato</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Me siga no Twitter</a></li>
+                <li><a href="#" class="text-white">Curta no Facebook</a></li>
+                <li><a href="#" class="text-white">Me envie um e-mail</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Patrick Passarella</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+         
+        </p>
+          <p>
+            <a href="x.html" class="btn btn-primary my-2">Slide Show Click</a>
+            <a href="#" class="btn btn-secondary my-2">Site</a>
+            <a href="form.html" class="btn btn-primary my-2">Form</a>
+            <h1 class="jumbotron-heading">Projeto GitHub com Ajax Formulário de CEP </h1>
+            <p class="text-muted">Testando o campo do CEP via json atraves do link viacep.com.br
+            </p>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+          
+            
+            <div class="col-md-12">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+                <div class="card-body">
+                  <div class="container">
+                    <form action="" id="form">
+                        <div class="input-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="not-null" placeholder="Nome" id="nome" name="nome">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="text"  class="not-null" placeholder="E-mail" id="email" name="email">
+                        </div>
+                        <div class="input-group">
+                            <label for="CPF">CPF</label>
+                            <input type="text"  class="not-null" placeholder="CPF" id="cpf" name="cpf">
+                        </div>
+                        <div class="input-group">
+                            <label for="CEP">CEP</label>
+                            <input type="text" class="not-null" placeholder="CEP" id="cep" name="cep">
+                           CEP Bahia 41500-620
+                        </div>
+                
+                         <div class="address">
+                            <div class="input-group">
+                                <label for="rua">Rua</label>
+                                <input type="text" id="rua" size="50">
+                            </div>
+                            <div class="input-group">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" id="bairro" size="30">
+                            </div>
+                            <div class="input-group">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade" size="30">
+                            </div>
+                            <div class="input-group">
+                                <label for="uf">UF</label>
+                                <input type="text" id="uf" size="2">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <button>Cadastrar</button>
+                        </div>
+                    </form>
+                    <div id="mensagem"> </div>
+                </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                   
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script src="./js/form.js"></script>
+           
+            
+           
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <section>
+            <h1>Detalhes da pesquisa</h1>
+            <p> Para buscarmos os dados abaixo utilizamos um dos seguintes argumentos<br><br>
+
+function validaCEP(elem){
+  if(!elem.value.match(/^[0-9]{8}/)) 
+      return `Digite um CEP válido.`;
+  else return '';
+  
+}
+<br>
+
+              const isEmail = validaEmail(email);
+              if(isEmail) msg.push(isEmail);
+              <br><br>      
+              const isCEP = validaCEP(cep);
+              if(isCEP.length > 0) {<br><br>
+                  msg.push(isCEP);<br><br>
+              } else {  <br><br>
+                  const script = document.createElement('script');<br><br>
+                  script.src = 'https://viacep.com.br/ws/' + cep.value + <br>'/json?callback=updateAdress';
+                  document.body.appendChild(script);
+                  
+              }
+              <br><br>
+              Retorno da Busca pelo CEP<br><br>
+              updateAdress({
+              "cep": "41500-620",
+              "logradouro": "Rua Centro",
+              "complemento": "",
+              "bairro": "São Cristóvão",
+              "localidade": "Salvador",
+              "uf": "BA",
+              "ibge": "2927408",
+              "gia": "",
+              "ddd": "71",
+              "siafi": "3849"
+            });</p>
+        </section>
+        <hr />
+    </div>
+    </main>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Voltar ao topo</a>
+        </p>
+        <p>Este exemplo de álbum é &copy; Bootstrap, mas, por favor, baixe e customize por conta própria.</p>
+        <p>Novo no Bootstrap? <a href="../../">Visite a página principal</a> ou leia nosso guia <a href="../../getting-started/">getting started</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>

@@ -23,6 +23,7 @@ function validaCEP(elem){
     if(!elem.value.match(/^[0-9]{8}/)) 
         return `Digite um CEP válido.`;
     else return '';
+    
 }
 
 function updateAdress(data) {
@@ -59,10 +60,11 @@ form.addEventListener('submit', function(event){
         const script = document.createElement('script');
         script.src = 'https://viacep.com.br/ws/' + cep.value + '/json?callback=updateAdress';
         document.body.appendChild(script);
+        
     }
 
     msg.forEach(item => {
-        markup += `<p>${item}</p>` 
+        markup += `<p>${item}</p>` ;
     });
 
     mensagem.innerHTML = markup;
