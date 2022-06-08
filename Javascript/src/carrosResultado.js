@@ -128,7 +128,7 @@ var resultado = estados.filter(retornaEstado);
 console.log(resultado);
 
 var estados = ["São Paulo", "Minas Gerais", "Rio de Janeiro", "Rio Grande do Norte", "Santa Catarina", "Acre"];
-var resultado = estados.filter( estadosComS  => (estadosComS.charAt(0) == "S"));
+var resultado = estados.filter( estadosComS  => (estadosComS.charAt(0) == "R"));
 console.log(resultado);
 
 //
