@@ -21,7 +21,6 @@ import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
-import Alerts from '../Alerts';
 
 function Copyright(props) {
   return (
@@ -84,7 +83,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 const mdTheme = createTheme();
 
-function DashboardContent(props) {
+function DashboardContent() {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -119,7 +118,7 @@ function DashboardContent(props) {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              {props.title}
+              Dashboard
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -173,7 +172,6 @@ function DashboardContent(props) {
                     height: 240,
                   }}
                 >
-                  <Alerts type="warning" >Gráfico atualizado</Alerts>
                   <Chart />
                 </Paper>
               </Grid>
@@ -205,6 +203,6 @@ function DashboardContent(props) {
   );
 }
 
-export default function Dashboard(props) {
-  return <DashboardContent title={props.title} />;
+export default function Dashboard() {
+  return <DashboardContent />;
 }
