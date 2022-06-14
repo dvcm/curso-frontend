@@ -1,0 +1,117 @@
+$color-primary: #F48000;
+$color-secondary: #392e26;
+$font-color-primary: #ffffff;
+$font-color-secondary: #454545;
+$font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 2.6rem;
+$font-size-nav: 3.7em;
+
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import 'nav';
+@import 'grid';
+
+@viewport {
+    width: device-widht;
+    zoom: 1;
+}
+
+* {
+    box-sizing: border-box;
+    // considere o padding e border como parte do calculo total da largura e altura
+    // aula de gridview
+}
+
+html {
+    font-size: 68.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-primary;
+    font-family: $font-default;
+    margin: 0;
+}
+
+h1 {
+    color: $font-color-primary;
+    text-align: center;
+    margin-top: 4rem;
+  //  padding: 0 20px;
+  //  border: 2px solid #f58220;
+  //  width: calc(100% - 4%);
+
+}
+
+article {
+
+    h1 {
+        color: $color-secondary;
+        font-size: 3rem;
+        text-align: left;
+    }
+
+}
+
+h2 {
+    color: $font-color-primary;
+    font-family: 'freshman', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-shadow: 1px 2px 8px #FFFFFF;
+}
+
+#root,
+header,
+section,
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+section {
+    padding: 4rem 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+//sass
+.container {
+
+    #logo{
+        max-width: 90%;
+    }
+
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+    
+
+    @media (max-width:768px){
+        max-width: 99%;
+        
+    }
+
+    @media( min-widht: 1024px ){
+        
+    }
+}
+
+
+@import 'logo';
+@import 'ads';
+@import 'animations';
+@import 'header';
+@import 'sobre';
+@import 'produtos';
+@import 'vitrine';
+@import 'steps';
+@import 'footer';

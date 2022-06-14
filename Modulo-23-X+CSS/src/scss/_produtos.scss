@@ -1,0 +1,16 @@
+
+#produtos {
+    
+    background-color: #009688;
+    float: left;
+    
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    @media (max-width: 767px){
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+   

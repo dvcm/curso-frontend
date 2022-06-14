@@ -6,4 +6,5 @@
 "editor.fontLigatures": true,
 "typescript.inlayHints.parameterNames.enabled": "all",
 "workbench.fontAliasing": "auto",
+"js/ts.implicitProjectConfig.checkJs": true,
 }
